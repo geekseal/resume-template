@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이력서</title>
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -24,19 +22,27 @@
 </head>
 
 <body>
-  <article class="p-10 grid grid-cols-3 gap-y-6">
+  <article class="
+    min-w-[390px] mx-auto p-10 flex flex-col
+    md:max-w-screen-lg md:grid md:grid-cols-3 md:gap-y-6">
     <h2 class="sr-only">이력서</h2>
-    <header class="col-span-3 flex justify-between items-center p-4">
+    <header class="
+      flex flex-col items-center p-4 gap-6 border-solid border-b-2 border-gray-200
+      md: col-span-3 md:flex-row md:gap-10 md:border-b-0">
+      <img class="w-36 h-36 object-cover rounded-full" src="images/profile.jpg" alt="">
       <div>
-        <h3 class="text-4xl tracking-widest mb-2">류기현 <strong>KIHYUN RYU</strong></h3>
+        <h3 class="text-3xl tracking-widest mb-2">류기현<em class="text-sm md:text-3xl font-bold ml-3">KIHYUN RYU</em></h3>
         <p class="text-slate-600">주니어 프론트엔드 개발자</p>
       </div>
-      <img class="w-32 h-32 object-cover rounded-full" src="images/profile.jpg" alt="">
     </header>
 
-    <section class="col-span-1 p-4 flex flex-col gap-8 border-solid border-t-2 border-r-2 border-gray-200">
+    <section class="
+      grid grid-cols-3 gap-y-3 p-4
+      md:col-span-1 md:flex md:flex-col md:gap-6 md:border-solid md:border-t-2 md:border-r-2 md:border-gray-200">
       <h3 class="sr-only">기본 정보</h3>
-      <section class="pb-8 border-solid border-b-2 border-gray-200">
+      <section class="
+        col-span-2 pb-3 border-solid border-b-2 border-gray-200
+        md:pb-8">
         <h4 class="tracking-widest mb-3">연락처</h4>
         <ul class="text-xs">
           <li class="flex gap-2 mb-2">
@@ -63,11 +69,13 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 shrink-0">
               <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
             </svg>
-            <a href="https://github.com/lazybirdwins">My GitHub</a>
+            <a class="text-sky-700" href="https://github.com/lazybirdwins">My GitHub</a>
           </li>
         </ul>
       </section>
-      <section class="pb-8 border-solid border-b-2 border-gray-200">
+      <section class="
+        row-start-2 col-span-3
+        md:pb-8 md:border-solid md:border-b-2 md:border-gray-200">
         <h4 class="tracking-wide mb-3">사용 가능한 기술</h4>
         <dl class="">
           <dt class="text-sm font-semibold mb-1">프론트엔드</dt>
@@ -76,7 +84,7 @@
           <dd class="text-xs">Git, GitHub, Discord</dd>
         </dl>
       </section>
-      <section>
+      <section class="pb-3 border-solid border-b-2 border-gray-200">
         <h3 class="tracking-widest mb-3">학력</h3>
         <dl class="">
           <dt class="text-sm font-semibold mb-1">컴퓨터공학 학사</dt>
@@ -86,30 +94,34 @@
       </section>
     </section>
 
-    <section class="col-span-2 py-4 px-8 flex flex-col gap-4 border-solid border-t-2 border-gray-200">
+    <section class="col-span-2 py-4 px-4 md:px-8 flex flex-col gap-4 border-solid border-t-2 border-gray-200">
       <h3 class="sr-only">내용</h3>
       <section class="pb-8 border-solid border-b-2 border-gray-200">
         <h4 class="tracking-widest mb-3">소개</h4>
-        <img class="w-32 h-32 object-cover rounded-full float-right ml-6" src="images/jean.jpg" alt="">
-        <p class="text-xs indent-1 mb-1">
-          ‘입을 수 있는’ 바지 한 벌을 제작해봤습니다. 무언가를 만들어내는 것과는 거리가 있었던 저였지만, 전혀 새로운 분야에서 시작부터 완성까지의 과정을 경험해보고 싶었기 때문입니다.
-        </p>
-        <p class="text-xs indent-1 mb-1">
-          데님 전문 작업장과 수선집을 돌아다니며 만난 이들에게선 공통적으로 기술에 대한 자긍심을 느낄 수 있었습니다. 저의 지향점 또한 같습니다. 제가 뛰어든 분야에 자긍심을 가질만큼 실력을 가다듬고자 합니다.
-        </p>
-        <p class="text-xs indent-1">
-          앞으로도 제가 잘 모르는 분야에 대해선 겸손하며 빠르게 흡수하여, '이용 가능한' 서비스를 구현하겠습니다.
-        </p>
+        <div class="flex flex-col md:flex-row gap-4">
+          <img class="w-32 h-32 object-cover rounded-full self-center" src="images/jean.jpg" alt="">
+          <div class="text-xs">
+            <p class="indent-1 mb-1">
+              ‘입을 수 있는’ 바지 한 벌을 제작해봤습니다. 무언가를 만들어내는 것과는 거리가 있었던 저였지만, 전혀 새로운 분야에서 시작부터 완성까지의 과정을 경험해보고 싶었기 때문입니다.
+            </p>
+            <p class="indent-1 mb-1">
+              데님 전문 작업장과 수선집을 돌아다니며 만난 이들에게선 공통적으로 기술에 대한 자긍심을 느낄 수 있었습니다. 저의 지향점 또한 같습니다. 제가 뛰어든 분야에 자긍심을 가질만큼 실력을 가다듬고자 합니다.
+            </p>
+            <p class="indent-1">
+              앞으로도 제가 잘 모르는 분야에 대해선 겸손하며 빠르게 흡수하여, '이용 가능한' 서비스를 구현하겠습니다.
+            </p>
+          </div>
+        </div>
       </section>
       <section class="pb-8 border-solid border-b-2 border-gray-200">
         <h4 class="tracking-widest mb-3">프로젝트</h4>
-        <ul class="flex flex-col gap-3">
+        <ul class="flex flex-col gap-6">
           <li>
             <p class="text-sm font-semibold">벤딩머신</p>
             <p class="text-xs">음료 자판기의 실제 동작을 구현한 프로젝트입니다.</p>
-            <a class="text-xs text-sky-600 inline-block mr-3" href="">GitHub 주소</a>
+            <a class="text-xs text-sky-700 inline-block mr-3" href="">GitHub 주소</a>
             <span class="text-xs">|</span>
-            <a class="text-xs text-sky-600 inline-block ml-3" href="">실행 페이지</a>
+            <a class="text-xs text-sky-700 inline-block ml-3" href="">실행 페이지</a>
             <ul class="text-xs list-disc ml-10">
               <li class="">detail</li>
               <li class="">detail</li>
@@ -119,9 +131,9 @@
           <li>
             <p class="text-sm font-semibold">감귤마켓</p>
             <p class="text-xs">온라인 스토어를 구현한 프로젝트입니다.</p>
-            <a class="text-xs text-sky-600 inline-block mr-3" href="">GitHub 주소</a>
+            <a class="text-xs text-sky-700 inline-block mr-3" href="">GitHub 주소</a>
             <span class="text-xs">|</span>
-            <a class="text-xs text-sky-600 inline-block ml-3" href="">실행 페이지</a>
+            <a class="text-xs text-sky-700 inline-block ml-3" href="">실행 페이지</a>
             <ul class="text-xs list-disc ml-10">
               <li class="">detail</li>
               <li class="">detail</li>
@@ -132,11 +144,11 @@
       </section>
       <section>
         <h4 class="tracking-widest mb-3">경험</h4>
-        <ul class="flex flex-col gap-3">
+        <ul class="flex flex-col gap-6">
           <li>
             <div class="overflow-hidden mb-1">
-              <p class="text-sm font-semibold float-left">멋쟁이사자처럼 - <em>프론트엔드 개발자</em></p>
-              <span class="text-xs float-right">2023.01. - 현재</span>
+              <p class="text-sm font-semibold md:float-left">멋쟁이사자처럼 - <em>프론트엔드 개발자</em></p>
+              <p class="text-xs text-slate-600 md:float-right">2023.01. - 현재</p>
             </div>
             <ul class="list-disc ml-10 text-xs">
               <li>서비스 개발팀 (2022.03. - 현재)</li>
@@ -151,25 +163,23 @@
           </li>
           <li>
             <div class="overflow-hidden mb-1">
-              <p class="text-sm font-semibold float-left">멋쟁이사자처럼 프론트엔드 스쿨</p>
-              <span class="text-xs float-right">2022.09. - 2023.01.</span>
+              <p class="text-sm font-semibold md:float-left">멋쟁이사자처럼 프론트엔드 스쿨</p>
+              <p class="text-xs text-slate-600 md:float-right">2022.09. - 2023.01.</p>
             </div>
             <ul class="list-disc ml-10 text-xs">
               <li>서비스 개발팀 (2022.06. - 현재)</li>
               <ul class="list-disc ml-6">
-                <li><a class="text-sky-600" href="">벤딩머신 프로젝트</a>의 생산 속도 향상을 위해 <a class="text-sky-600" href="">Tailwind CSS</a>를 사용하여 작업 시간을 30% 단축시켰습니다.</li>
+                <li><a class="text-sky-700" href="">벤딩머신 프로젝트</a>의 생산 속도 향상을 위해 <a class="text-sky-700" href="">Tailwind CSS</a>를 사용하여 작업 시간을 30% 단축시켰습니다.</li>
               </ul>
               <li>마케팅팀 (2022.03 - 2022.06)</li>
               <ul class="list-disc ml-6">
-                <li><a class="text-sky-600" href="">감귤마켓 프로젝트</a>의 생산 속도 향상을 위해 <a class="text-sky-600" href="">Tailwind CSS</a>를 사용하여 작업 시간을 30% 단축시켰습니다.</li>
+                <li><a class="text-sky-700" href="">감귤마켓 프로젝트</a>의 생산 속도 향상을 위해 <a class="text-sky-700" href="">Tailwind CSS</a>를 사용하여 작업 시간을 30% 단축시켰습니다.</li>
               </ul>
             </ul>
           </li>
         </ul>
       </section>
     </section>
-
-
   </article>
 </body>
 </html>
