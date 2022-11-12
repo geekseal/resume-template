@@ -1,6 +1,8 @@
 # resume-template
 using Tailwind CSS
 
+실행 URL: https://kisvim.github.io/resume-template/
+
 ### PC Version
 ![preview](https://user-images.githubusercontent.com/112453419/193648462-52d363d0-f6d9-4e7e-a508-9a88214f8c36.png)
 
